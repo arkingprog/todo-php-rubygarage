@@ -5,7 +5,7 @@ $sql="create table users(
 id SERIAL NOT NULL  PRIMARY KEY,
 username VARCHAR(35),
 email VARCHAR(35),
-password VARCHAR(50));
+password VARCHAR(200));
 create TABLE todo_lists( id SERIAL NOT NULL  PRIMARY KEY,
   user_id INT REFERENCES users(id) on DELETE CASCADE,
   title VARCHAR (1024),
